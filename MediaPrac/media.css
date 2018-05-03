@@ -1,0 +1,88 @@
+/* #the-box{
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+} */
+
+.container{}
+
+#top-menu{
+    background-color: darkorchid;
+    height: 200px;
+}
+
+#right-menu{
+    background-color: darkorange;
+    height: 200px;
+}
+
+#left-menu li{
+    list-style: none;
+
+    height: 100px;
+    background-color: darkcyan;
+    margin-top: 10px;
+}
+
+#content{
+    height: 60%;
+    float: left;
+}
+
+#footer{
+    height: 50px;
+    background-color: darkslategray;
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0px;
+}
+
+/* Desktop view */
+@media screen and (min-width: 768px){
+    #left-menu{
+        float: left;
+        width: 20%;
+    }
+
+    #right-menu{
+        float: right;
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+/* if the screen is at least 900 px then apply the rule */
+/* @media screen and (min-width: 900px){
+    #the-box{
+        background-color: aquamarine;
+    }
+
+    body{
+        background-color: chartreuse;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    #the-box{
+        background-color: darkgoldenrod;
+    }
+
+    body{
+        background-color: darkmagenta;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    #the-box{
+        border-radius: 50%;
+    }
+    body{
+        background-color: darkred;
+    }
+} */

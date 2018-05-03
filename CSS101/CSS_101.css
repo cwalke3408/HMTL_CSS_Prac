@@ -1,0 +1,76 @@
+body{
+    /* background-color: aqua; */
+    border: blueviolet 3px dashed;
+}
+
+/* block element( such as div) takes the entire width and 
+take as much height as it needs */
+
+/* cant force width and height on an inline property */
+
+#container{
+    /* background-color: chocolate; */
+    /* the default is always 100% (of the parent) */
+    /* change the width from 100% to 80% */
+    /* the block STILL takes 100%, so margin is 
+    to set the container in the middle of it's parent, 
+    put equal portions of margin on both sides */
+    width: 80%;
+    border: lawngreen 3px dashed;
+    margin: auto;
+    /* don't move the container... move the stuff INSIDE the contianer */
+    text-align: center;
+}
+
+/* a space (as opposed to a ,) means parents > child  */
+#container .the-block{
+    width: 48%;
+    display: inline-block;
+}
+
+/* to target more than one element you use a ',' to seperate */
+.the-block, .the-block2{
+    font-size: 50px;
+    vertical-align: middle;
+}
+
+/* looks for the 'the-block' and 'one' classes */
+.the-block.one{
+    background-color: indianred;
+}
+
+/* doesn't turn to green because CSS goes with the more 
+sepecific like above; */
+.one{
+    background-color: green;
+}
+
+.parent{
+    width: 20em;
+    height: 20em;
+    background: slateblue
+}
+
+/* > is like a space, but will ONLY go one layer down */
+.parent > div{
+    background: salmon;
+    width: 10em;
+    height: 10em;
+}
+
+.parent > div > div{
+    background: skyblue;
+    width: 5em;
+    height: 5em;
+}
+
+.inline-tag{
+    font-size: 44px;
+    /* inline honor padding and margin of left and right */
+    /* doesn't honor height: and width; */
+
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}

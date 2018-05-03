@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<html>
+
+    <head>
+        <title>LeFlop James</title>
+        
+        <style>
+
+            #picSection{
+                text-align: center;
+            }
+            /* insert css */
+            #leftSection{
+                display: inline-block;
+                width: 20%;
+                /* border: red 2px solid; */
+            }
+
+            #innerLeftSection{
+                /* border: seagreen 2px solid; */
+            }
+
+            #rightSection{
+                display: inline-block;
+                width: 70%;
+                margin-left: 5%;
+                /* border: blue 2px solid; */
+                padding-top: 25%;
+                margin-bottom: 25%;
+            }
+
+            .leftPic{
+                width: 100%;
+                height: 17%;
+                margin: 10px 0px;
+            }
+
+            #rightPic{
+                width: 100%;
+                margin-bottom: 25%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="topSection">
+            <h1>Changing the Game</h1>
+        </div>
+        <div id="picSection">
+            <div id="leftSection">
+                <div id="innerLeftSection">; caption.src = 'caption '
+                    <img class="leftPic" src="./lebron_pics/lbj_flop1.jpg" onclick="rightPic.src = this.src; caption.src = 'caption 1'">
+                    <img class="leftPic" src="./lebron_pics/lbj_flop2.jpg" onclick="rightPic.src = this.src; caption.src = 'caption 2'">
+                    <img class="leftPic" src="./lebron_pics/lbj_flop3.jpg" onclick="rightPic.src = this.src; caption.src = 'caption 3'">
+                    <img class="leftPic" src="./lebron_pics/lbj_flop4.jpg" onclick="rightPic.src = this.src; caption.src = 'caption 4'">
+                    <img class="leftPic" src="./lebron_pics/lbj_flop5.jpg" onclick="rightPic.src = this.src; caption.src = 'caption 5'">
+                </div>
+            </div>
+            <div id="rightSection">
+                <img id="rightPic" src="./lebron_pics/lbj_flop2.jpg" name="rightPic" >
+
+                <figcaption name="caption">Caption right here</figcaption>
+
+            </div>
+        </div>
+    </body>
+</html>

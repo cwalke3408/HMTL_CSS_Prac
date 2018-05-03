@@ -1,0 +1,23 @@
+body{
+    background-color: bisque;
+}
+
+#container{
+    background-color: red;
+    border: 2px black solid;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+
+}
+
+.left{
+    float: left;
+    background-color: purple;
+}
+
+.right{
+    float: right;
+    background-color: limegreen;
+}

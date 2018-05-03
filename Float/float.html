@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="./float.css">
+    </head>
+
+    <body>
+        
+        <h1>Float (makes no sense)</h1>
+        <ol>
+            <li>
+                A block level element, when floated, longer takes up the whole parent. 
+                    It's no longer a block. It's not even a display type.
+                    You can't add margin.
+            </li>
+            <li>
+                The element, will go as far left (or right)
+                as it possibly can, unti it runs into
+                another floating thing or it runs out of room.
+            </li>
+
+            <li>A floated element is in it's own universe.
+                They don't pass their height up to 
+                non-floating parents. Static + float = weird
+            </li>
+
+        </ol>
+
+        <ol>
+            <li>IMPORTANT</li>
+            <li>To force a floated elemnt to pass it's height 
+                up to it's parent...
+            </li>
+            <li>
+                Make the parent float
+            </li>
+            <li>
+                Set the parent to have overflow: hidden
+            </li>
+        </ol>
+
+        <div id="container"> 
+            <div class="left">
+                Text in left Text in left
+=             
+                Text in left Text in left
+                Text in left Text in leftText in left
+            </div>
+            <div class="left">
+                Text in left Text in left
+                Text in left Text in left
+                Text in left Text in left                
+                Text in left Text in left
+                Text in left Text in leftText in left
+            </div>
+            <div class="left">
+                Text in left Text in left
+ 
+                Text in left Text in leftText in left
+            </div>
+            <div class="right">
+                Text in right Text in right
+                Text in right Text in rightText in left
+            </div>
+
+        </div>
+    </body>
+</html>

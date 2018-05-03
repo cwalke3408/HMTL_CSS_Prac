@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    I do not belong to HTML tag
+
+    <!-- Head tag is where most of the stuff the user doesn't
+         need to see goes.
+         I.e., css, js, meta tags, etc.
+     -->
+
+     <!-- Meta tag: infomation about infomation
+        -- *info about this page
+        -- * e.g. <meta tag> description : google will used for
+      ---- descripion in google search 
+
+        -- <meta propertie>
+    -->
+    <head>
+            <title>Basic HTML</title>
+            <style>
+            
+            table tbody tr td{
+                color: rgba(90, 5, 5, 0.664);
+            }
+            </style>
+    </head>
+    
+
+    <!-- atr:
+         ** atr gives extra info
+         ** e.g: id, class, ref, style -->
+    <body id="bodyId" class="bodyClass" style="background:rgba(230, 61, 0, 0.795)">
+        <!-- All the stuff the user is supposed to see -->
+        <strong>I am very Important</strong>
+        <em>Italics</em>
+        <blockquote>Browser will style it for us</blockquote>
+
+        <!-- strucutural tags:
+            ** e.g. div, p,  -->
+        <div>
+            <!-- Container -->
+            I am a new strucutural tag
+
+            <!-- Formatting tags
+            ** h, p, strong/b, em/i, sup, sub, abbr -->
+            <h1> I'm a H1 </h1>
+            <h2> I'm a
+                <br />
+                <br />
+                H2</h2>
+
+            <!-- Inline = content that makes the web. Stuff like 
+            text, images, videos, 
+            Inline element will take up as much space as it needs...
+            unless told otherwise. They do NOT start new lines.
+
+            Block level elements are usually stuff that people don't see.
+            ie., div block elements start new lines... 
+            100% of the space available
+            -->
+
+            <div style="border: olivedrab 4px solid">
+                    <img width=100px src="https://i.imgur.com/ZkCaZyR.jpg" alt="SpongBob Meme">
+     
+     
+                    <table border=2>
+                        <thead>
+                            <!-- A table is organized by:
+                            tr: row
+                            inside of rows are td = columns -->
+                            <tr>
+                                <th>Name</th>
+                                <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jordan</td>
+                                <td>Chicago</td>
+                            </tr>
+                            <tr>
+                                <td>Kobe</td>
+                                <td>LA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+            <p>I am a paragraph</p>
+
+
+
+            <!-- attribute -->
+            <!-- target: Don't load up -->
+            <!-- _blank: opens in a new tab -->
+            <a href="http://www.espn.com" target="_blank">
+                Click on this
+            </a>
+            <br>
+            <a href="tel:155555555">555</a>
+            <br>
+            <a href="mailto:myemail@syntelinc.com">Email me</a>
+
+            <!-- input -->
+            <form action="">
+                <input type="text" />
+                <input type="password" />
+                <input type="email" />
+                <input type="number" />
+                <input type="date" />
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <select name="" id=""></select>
+            </form>
+
+            <!-- Ordered List -->
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+
+            <!-- Unordered List -->
+            <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+            </ul>
+        </div>
+    </body>
+
+</html>

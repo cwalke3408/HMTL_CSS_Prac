@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="position.css">
+</head>
+
+<body>
+    <h1>CSS Position Property has 4 possible values</h1>
+
+    <ol>
+        <li><a href="#static"> Static </a></li>
+        <li><a href="#relative"> Relative </a></li>
+        <li><a href="#absolute"> Absolute </a></li>
+        <li><a href="#fixed"> Fixed </a></li>
+    </ol>
+
+    <!-- If an anchor tag has a name, it can be linked to interally. -->
+    <a name="static"></a>
+    <div class="static">
+        <h2>Static</h2>
+        <ol>
+        <li>Static is the default postion value.</li>
+        <li>Top, bottom, left, and right will NOT work with static.</li>
+        <li>A static element will show up exactly where it is in
+            the HTML, left to right, to to bottom... it CANNOT
+            be moved.
+        </li>
+        </ol>
+        <div class="static-box">
+            Static box
+        </div>
+    </div>
+
+    <a name="relative"></a>
+    <div class="relative">
+        <h2>Relative Position</h2>
+        <ol>
+            <li>A relative position is the same as static,
+                EXECPT it will honor top, left, bottom, right
+            </li>
+            <li>If you move it, it will sit on top of other
+                stuff on the page, and the page will think it's still 
+                where it used to be.
+            </li>
+
+        </ol>
+        <div class="relative-box">
+            Relative Box
+        </div>
+    </div>
+
+    <a name="fixed"></a>
+    <div class="fixed">
+        <h2>Fixed Position</h2>
+        <ol>
+            <li>A fixed postion element will remain,
+                relative to the viewpoint (the screen)
+                even if you scroll
+            </li>
+            <li>Top, bottom, and right will work just fine</li>
+            <li>Unlike Relative, it will not reserve its
+                old space. IE., anything with static or relative 
+                will not know it's there.
+            </li>
+        </ol>
+        <div class="fixed-box">
+            Fixed Box
+        </div>
+    </div>
+
+    <a name="absolute"></a>
+    <div class="absolute">
+        <h2>Absolute Position</h2>
+        <ol>
+            <li>Absolute elements work off the grind system.
+                Just like fixed, they are ignored by 
+                EVERYONE.
+            </li>
+            <li>They honor z-index</li>
+            <li>Like fixed, they do not leave gaps in the page</li>
+            <li>The top/left/bottom/right will be relative
+                to the FIRST parent that has a posisiton set.
+            </li>
+        </ol>
+        <div class="absolute-box">
+            Absolute Box
+        </div>
+    </div>
+
+
+    <a name="sticky"></a>
+    <div class="sticky">
+        <h2>Sticky Element</h2>
+        <ol>
+            <li>Sticky elements are just like relative, EXECPT
+                when the would reac the top will be fixed;
+            </li>
+        </ol>
+        <div class="sticky-box">
+            sticky box
+        </div>
+    </div>
+</body>
+</html>
